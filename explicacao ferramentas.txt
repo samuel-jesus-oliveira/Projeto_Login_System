@@ -1,0 +1,9 @@
+node.js permite usar js fora do navegador  -------- fogão
+npm é o gerenciador de pacotes do node.js --------- panelas
+Docker cria um ambiente padronizado para rodar o sistema --------- caixa termica com as marmitas
+npm init -n --- gera o arquivo package.json
+npm install express -- cria a nossas rotas com servidor HTTP
+npm install express bcryptjs ---- faz a criptografia das senhas
+npm install express bcryptjs jsonwebtoken -- gera token da seccão apos login
+npm install express bcryptjs jsonwebtoken dotenv mongoose -- comunicação
+npm install --save-dev nodemon  -- responsavel por reiniciar servidor automaticamente
