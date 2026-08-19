@@ -55,10 +55,12 @@ message: "Erro no servidor ao registrar."
 router.post("/login", async (req, res) => {
 try {const { email, senha } = req.body;
 
-if (!email || !senha) {
-return res.status(400).json({
-message: "Preencha todos os campos."
-});
+if (!email & !senha) {
+    return res.status(400).json({message: "Preencha todos os campos."});
+}if (!email){
+    return res.status(400).json({message: "Preencha o campo email."});
+}if (!senha){
+    return res.status(400).json({message: "Preencha o campos senha."});
 }
 
 const users = await fs.readJson(DB).catch(() => []);
