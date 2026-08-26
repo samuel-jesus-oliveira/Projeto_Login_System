@@ -3,7 +3,9 @@ GERENCIADOR DE TEMA GLOBAL
 ================================== */
 function inicializarTema() {
     // Busca a classe em minúsculas como no documento
-    const btnThemeToggle = document.querySelector(".theme-toggle-btn");
+    const btnThemeToggle = 
+        document.querySelector(".theme-toggle-btn");
+
     const body = document.body;
     
     // 1. Recupera o tema salvo no navegador
