@@ -191,3 +191,22 @@ body.light .footer {
 body.light .footer a {
   color: #0072ff;
 }
+/* ==================================
+   INTEGRAÇÃO DO MODAL COM TEMA CLARO
+   ================================== */
+body.light .alert-overlay{
+  background: rgba(130, 220, 241, 0.6);
+}
+
+body.light .alert-box {
+  background: #ffffff;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+body.light .alert-box h3 {
+  color: #0f172a;
+}
+
+body.light .alert-box p {
+  color: #0f172a;
+}
