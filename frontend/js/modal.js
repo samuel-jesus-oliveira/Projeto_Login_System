@@ -15,7 +15,7 @@ function mostraAlert(
     const alertCard = 
         customAlert.querySelector(".alert-box");
 
-    alertCard.classList.remove("success", "error")
+    alertCard.classList.remove("success", "erro")
 
     if (tipo === "sucesso") {
         alertCard.classList.add("success");

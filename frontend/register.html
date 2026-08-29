@@ -23,7 +23,7 @@
             <form id="registerForm">
                 <div class="input-group">
                     <label>Nome completo</label> 
-                    <input type="text" placeholder="Digite seu nome">
+                    <input id="nome" type="text" placeholder="Digite seu nome">
                 </div>
 
                 <div class="input-group">
@@ -33,12 +33,12 @@
 
                 <div class="input-group">
                     <label>Senha</label> 
-                    <input type="password" placeholder="Digite sua senha">
+                    <input id="senha" type="password" placeholder="Digite sua senha">
                 </div>
 
                 <div class="input-group">
                     <label>Confirmar Senha</label> 
-                    <input type="password" placeholder="Repita a senha">
+                    <input id="confirmar" type="password" placeholder="Repita a senha">
                 </div>
 
 
@@ -48,6 +48,19 @@
             </form>
         </section>
     </main>
-    <script src="js/theme.js"></script>
+    <!-- Estrutura do Modal em HTML -->
+    <!-- O modal deve ficar aqui, antes de fechar o </body> -->
+    <div id="customAlert" class="alert-overlay">
+        <div class="alert-box">
+            <h3>Aviso Importante!</h3>
+            <p id="alertMessage">Mensagem do modal...</p>
+            <button id="btnAlertConfirm">OK</button>
+        </div>
+    </div>
+
+    <script src="./js/theme.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/register.js"></script>
+
 </body>
 </html>

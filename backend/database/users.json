@@ -4,5 +4,17 @@
     "nome": "João",
     "email": "joao@email.com",
     "senha": "$2b$10$rjw5ma0a5bxc/8eAMPeEpuXdceFfDjY8S3JnEphxUZzrsHU82CT4e"
+  },
+  {
+    "id": 1787960443056,
+    "nome": "samuel jesus",
+    "email": "samueljesus@gmail.com",
+    "senha": "$2b$10$fyiVyQWAucZ7C8AybL2nc.a2DSymNYR29W0EDbkX0uGkKWKg.9d.e"
+  },
+  {
+    "id": 1787962430092,
+    "nome": "samuel oliveira",
+    "email": "samuel@gmail.com",
+    "senha": "$2b$10$kwTu6v7ly7JcG0Q7qYRWl.uvCPrCh.v.fD90yeroSBKBEgMYlMhg2"
   }
 ]
