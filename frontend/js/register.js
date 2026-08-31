@@ -11,8 +11,14 @@ form.addEventListener("submit", async (e) => {
   const senha = document.getElementById("senha").value;
   const confirmar = Confirmar.value;
 
+  // Adicione esta validação:
+  if (senha.length < 6) {
+    mostraAlert("A senha deve ter no mínimo 6 caracteres!", document.getElementById("senha"), "erro");
+    return;
+  }
+
   if (senha !== confirmar) {
-    mostraAlert("As senhas não coincidem!", Confirmar, "erro");
+    mostraAlert("As senhas não coincidem!", document.getElementById("confirmar"), "erro");
     return;
   }
 

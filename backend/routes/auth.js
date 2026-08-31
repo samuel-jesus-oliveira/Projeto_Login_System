@@ -20,6 +20,14 @@ router.post("/register", async (req, res) => {
             });
         }
 
+        // Adicione esta validação:
+
+        if (senha.length < 6) {
+            return res.status(400).json({
+                message: "A senha deve conter no mínimo 6 caracteres."
+            });
+        }
+
         const users = await fs.readJson(DB).catch(() => []);
 
         const existe = users.find((u) => u.email === email);
@@ -38,7 +46,7 @@ router.post("/register", async (req, res) => {
             senha: senhaHash
         });
 
-        //await fs.writeJson(DB, users, { spaces: 2 });
+        await fs.writeJson(DB, users, { spaces: 2 });
 
         return res.json({
             message: "Usuário criado com sucesso."

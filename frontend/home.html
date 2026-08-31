@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Login System</title>
+    <link rel="stylesheet" href="./css/styleDark.css">
+</head>
+<body>
+    <button class="theme-toggle-btn">🌙</button>
+    
+    <div class="login-container">
+        <h1>Olá! Seja bem-vindo, <span id="user-welcome">Usuário</span>!</h1>
+        
+        <p style="color: #4cd137; font-weight: bold; margin-top: 10px;">
+            ✓ Você está autenticado no sistema.
+        </p>
+        
+        <p style="margin-bottom: 25px;">
+            Acesso liberado com sucesso.
+        </p>
+
+        <div class="input-group">
+            <button type="button" id="logout-btn" style="background-color: #e74c3c;">Sair</button>
+        </div>
+    </div>
+
+    <!-- Modal reaproveitado do index -->
+    <div id="customAlert" class="alert-overlay">
+        <div class="alert-box">
+            <h3 id="alertTitle">Aviso</h3>
+            <p id="alertMessage" class="success">Mensagem</p>
+            <button type="button" id="btnAlertConfirm">OK, Entendi</button>
+        </div>
+    </div>
+    
+    <script src="./js/modal.js"></script>
+    <script src="./js/theme.js"></script>
+    <script src="./js/home.js"></script>
+</body>
+</html>
