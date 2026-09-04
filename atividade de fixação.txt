@@ -1,0 +1,54 @@
+====================================================================
+ESCOLA DO FUTURO PAULO RENATO DE SOUZA
+CURSO TÉCNICO EM CIÊNCIA DE DADOS E ANÁLISE
+DISCIPLINA: DESENVOLVIMENTO WEB / PROJETO PRÁTICO WEB FRONT-END
+ALUNO: SAMUEL JESUS OLIVEIRA
+PROFESSOR: HERACLIDES MOURÃO
+
+EXERCÍCIO DE FIXAÇÃO - AULA REGISTER.JS
+====================================================================
+
+1. Qual é a função do register.js?
+R: Capturar os dados do formulário de cadastro, validar as informações no Front-End e enviá-las para a API no Back-End.
+
+2. O que faz addEventListener("submit", ...)?
+R: Escuta e detecta o evento de envio (submissão) do formulário para disparar uma função no JavaScript.
+
+3. Para que serve e.preventDefault()?
+R: Impede o comportamento padrão do navegador de recarregar a página ao enviar o formulário.
+
+4. O que o .value faz?
+R: Pega o valor/texto digitado pelo usuário dentro de um campo do formulário (<input>).
+
+5. Qual a função do fetch()?
+R: Realizar requisições HTTP assíncronas para conectar o Front-End à API do Back-End.
+
+6. Por que utilizamos o método POST?
+R: Para enviar dados novos e sensíveis (como e-mail e senha) no corpo da requisição até o servidor.
+
+7. Para que serve Content-Type: application/json?
+R: Informa ao servidor que o formato do corpo da requisição que está sendo enviada é JSON.
+
+8. Qual a função do JSON.stringify()?
+R: Converter um objeto JavaScript em uma string no formato JSON para poder ser trafegada na rede.
+
+9. O que é enviado no body?
+R: Os dados do formulário formatados em JSON (no caso: nome, e-mail e senha).
+
+10. Como o backend recebe esses dados?
+R: Através do objeto req.body, utilizando o middleware express.json() no Express.
+
+11. Para que serve bcrypt.hash() no backend?
+R: Criptografar a senha digitada pelo usuário gerando um hash seguro antes de salvar no banco de dados.
+
+12. O que significa resposta.ok?
+R: É um boleano (true/false) que indica se a resposta HTTP do servidor teve um código de sucesso (entre 200 e 299).
+
+13. Para que serve resposta.json()?
+R: Converte a resposta em formato JSON enviada pelo servidor em um objeto JavaScript manipulável no código.
+
+14. O que acontece quando o cadastro é realizado com sucesso?
+R: O sistema exibe o modal verde de sucesso, limpa os campos do formulário e redireciona o usuário para a tela de login.
+
+15. Qual é a diferença entre a validação feita no register.js e a validação feita no auth.js?
+R: O register.js valida os dados no Front-End para dar feedback rápido ao usuário, enquanto o auth.js valida no Back-End para garantir a segurança real do servidor e do banco de dados.
